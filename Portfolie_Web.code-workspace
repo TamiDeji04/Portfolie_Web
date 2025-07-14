@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Portfolie_Web",
+			"path": "."
+		},
+		{
+			"name": "portfolio",
+			"path": "../../../Web_Dev/portfolio"
+		}
+	],
+	"settings": {}
+}

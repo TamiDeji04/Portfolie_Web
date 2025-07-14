@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oluwatamilore Adedeji-Ibraheem | Aspiring Cybersecurity Analyst</title>
   <meta name="description" content="Portfolio of Oluwatamilore Adedeji-Ibraheem, aspiring cybersecurity analyst. Projects, skills, and contact information.">
+  <meta name="keywords" content="Cybersecurity, Portfolio, Oluwatamilore Adedeji-Ibraheem, Analyst, Security, Resume, Projects, Skills, Contact">
+  <meta name="author" content="Oluwatamilore Adedeji-Ibraheem">
   <meta property="og:title" content="Oluwatamilore Adedeji-Ibraheem | Aspiring Cybersecurity Analyst">
   <meta property="og:description" content="Portfolio of Oluwatamilore Adedeji, aspiring cybersecurity analyst. Projects, skills, and contact information.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/resume.pdf">
+  <meta property="og:image" content="myphoto.jpeg">
   <meta property="og:url" content="https://yourdomain.com/">
+  <link rel="icon" type="image/jpeg" href="myphoto.jpeg">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
@@ -45,6 +48,24 @@
       backToTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+      // Section highlight on scroll
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('text-[var(--color-primary)]', 'font-bold');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('text-[var(--color-primary)]', 'font-bold');
+          }
+        });
+      });
     });
   </script>
 </head>
@@ -53,7 +74,7 @@
   <header class="fixed w-full z-20 top-0 left-0 border-b border-[var(--color-border)] bg-[var(--color-card)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--color-card)]/60">
     <nav class="max-w-6xl mx-auto flex justify-between items-center px-4 md:px-8 py-4" aria-label="Main navigation">
       <a href="#hero" class="header-title gradient-text" aria-label="Back to top">Oluwatamilore Adedeji</a>
-      <ul class="flex gap-6 md:gap-8 items-center" role="menubar">
+      <ul class="flex gap-6 md:gap-8 items-center">
         <li><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
         <li><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
         <li><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
@@ -79,7 +100,7 @@
       <div class="absolute inset-0 flex justify-center items-center pointer-events-none select-none">
         <div class="w-72 md:w-96 h-72 md:h-96 bg-[var(--color-primary)]/20 rounded-full blur-3xl animate-pulse"></div>
       </div>
-      <img src="myphoto.jpeg" alt="Photo of Oluwatamilore Adedeji" class="avatar rounded-full shadow-lg border-4 border-[var(--color-primary)] z-10 w-40 h-40 object-cover" loading="lazy" />
+      <img src="myphoto.jpeg" alt="Portrait of Oluwatamilore Adedeji-Ibraheem, aspiring cybersecurity analyst" class="avatar rounded-full shadow-lg border-4 border-[var(--color-primary)] z-10 w-40 h-40 object-cover" loading="lazy" width="160" height="160" />
       <h1 class="header-title gradient-text z-10">Oluwatamilore Adedeji</h1>
       <h2 class="text-xl md:text-2xl font-semibold text-[var(--color-primary)] mb-4 z-10">Aspiring Cybersecurity Analyst</h2>
       <p class="max-w-2xl text-center text-lg md:text-xl mb-8 z-10">Passionate about protecting digital assets and solving complex security challenges. Experienced in <span class="font-semibold text-[var(--color-primary)]">Java</span>, <span class="font-semibold text-[var(--color-primary)]">Python</span>, <span class="font-semibold text-[var(--color-primary)]">Wireshark</span>, and <span class="font-semibold text-[var(--color-primary)]">Linux</span>. Eager to contribute to innovative cybersecurity solutions.</p>

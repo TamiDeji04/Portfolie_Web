@@ -1,0 +1,16 @@
+{
+  "name": "Oluwatamilore Adedeji-Ibraheem Portfolio",
+  "short_name": "Tami Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#18181b",
+  "theme_color": "#18181b",
+  "description": "Portfolio of Oluwatamilore Adedeji-Ibraheem, aspiring cybersecurity analyst.",
+  "icons": [
+    {
+      "src": "myphoto.jpeg",
+      "sizes": "160x160",
+      "type": "image/jpeg"
+    }
+  ]
+}

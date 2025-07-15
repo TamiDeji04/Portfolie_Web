@@ -6,14 +6,7 @@
   <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
   <title>Oluwatamilore Adedeji-Ibraheem | Aspiring Cybersecurity Analyst</title>
-  <meta name="description" content="Portfolio of Oluwatamilore Adedeji-Ibraheem, aspiring cybersecurity analyst. Projects, skills, and contact information.">
-  <meta name="keywords" content="Cybersecurity, Portfolio, Oluwatamilore Adedeji-Ibraheem, Analyst, Security, Resume, Projects, Skills, Contact">
-  <meta name="author" content="Oluwatamilore Adedeji-Ibraheem">
-  <meta property="og:title" content="Oluwatamilore Adedeji-Ibraheem | Aspiring Cybersecurity Analyst">
-  <meta property="og:description" content="Portfolio of Oluwatamilore Adedeji, aspiring cybersecurity analyst. Projects, skills, and contact information.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="myphoto.jpeg">
-  <meta property="og:url" content="https://yourdomain.com/">
+  <!-- Meta tags for SEO and social preview removed as requested -->
   <link rel="icon" type="image/jpeg" href="myphoto.jpeg">
   <link rel="manifest" href="manifest.json">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
@@ -131,16 +124,11 @@
   <header class="fixed w-full z-20 top-0 left-0 border-b border-[var(--color-border)] bg-[var(--color-card)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--color-card)]/60">
     <nav class="max-w-6xl mx-auto flex justify-between items-center px-4 md:px-8 py-4" aria-label="Main navigation">
       <a href="#hero" class="header-title gradient-text" aria-label="Back to top">Oluwatamilore Adedeji</a>
-      <ul class="flex gap-6 md:gap-8 items-center">
-        <li><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
-        <li><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
-        <li><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
-        <li>
-          <button id="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="ml-2 p-2 rounded-full bg-[var(--color-border)] shadow focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]" tabindex="0">
-            <span id="theme-icon" aria-hidden="true"></span>
-          </button>
-        </li>
-      </ul>
+      <div class="flex gap-4 items-center">
+        <button id="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="ml-2 p-2 rounded-full bg-[var(--color-border)] shadow focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]" tabindex="0">
+          <span id="theme-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -201,36 +189,14 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-[var(--color-bg)]">
-      <div class="max-w-2xl mx-auto px-4">
+    <!-- Contact Info Section (replaces contact form) -->
+    <section class="py-16 bg-[var(--color-bg)]">
+      <div class="max-w-2xl mx-auto px-4 text-center">
         <h2 class="section-title">Contact</h2>
-        <form class="space-y-6" name="contact" method="POST" data-netlify="true" aria-label="Contact form" aria-live="polite">
-          <input type="hidden" name="form-name" value="contact">
-          <fieldset class="space-y-4">
-            <legend class="sr-only">Contact form fields</legend>
-            <div>
-              <label for="name" class="block mb-2 font-semibold">Name</label>
-              <input type="text" id="name" name="name" required aria-required="true" autocomplete="name" class="w-full px-4 py-2 rounded border border-[var(--color-border)] bg-[var(--color-card)]" aria-label="Your name" aria-describedby="name-desc">
-              <span id="name-desc" class="sr-only">Enter your full name</span>
-            </div>
-            <div>
-              <label for="email" class="block mb-2 font-semibold">Email</label>
-              <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" class="w-full px-4 py-2 rounded border border-[var(--color-border)] bg-[var(--color-card)]" aria-label="Your email address" aria-describedby="email-desc">
-              <span id="email-desc" class="sr-only">Enter your email address</span>
-            </div>
-            <div>
-              <label for="message" class="block mb-2 font-semibold">Message</label>
-              <textarea id="message" name="message" rows="4" required aria-required="true" class="w-full px-4 py-2 rounded border border-[var(--color-border)] bg-[var(--color-card)]" aria-label="Your message" aria-describedby="message-desc"></textarea>
-              <span id="message-desc" class="sr-only">Enter your message</span>
-            </div>
-            <div class="flex justify-center mt-4">
-              <!-- LinkedIn link removed -->
-            </div>
-          </fieldset>
-          <button type="submit" class="btn-primary w-full" aria-label="Send message">Send Message</button>
-          <div id="form-status" class="text-center mt-2 text-sm text-[var(--color-primary)]" aria-live="polite" style="display:none;"></div>
-        </form>
+        <div class="mt-6 flex flex-col items-center gap-4">
+          <a href="tel:8623723412" class="text-lg md:text-xl font-semibold text-[var(--color-primary)] hover:underline">📞 862-372-3412</a>
+          <a href="mailto:oluwatamdeji@gmail.com" class="text-lg md:text-xl font-semibold text-[var(--color-primary)] hover:underline">✉️ oluwatamdeji@gmail.com</a>
+        </div>
       </div>
     </section>
 
